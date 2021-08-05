@@ -57,12 +57,13 @@ test('Checks that results page opens and results are correct', async ({ page }) 
     expect(textContent).toContain("Microsoft Word 2010");
 });
 
-//Erroras
+//Erroras fixed
 test(`go to shortened Wiki`, async ({ page }) => {
     await page.goto('https://duckduckgo.com');
     await page.fill('#search_form_input_homepage', 'shorten www.wikipedia.com');
     await page.click('#search_button_homepage');
-    const shortUrl = await page.textContent('#shorten-url');
+    const shortUrl = await page.inputValue('#shorten-url');
+    //const shorterPage = await page.getAttribute('#shorten-url', 'value');
     await page.goto(shortUrl);
     expect(page.url()).toBe('https://www.wikipedia.org/');
 });
