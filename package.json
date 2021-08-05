@@ -1,0 +1,25 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "We gotta start makin' changes",
+  "main": "index.js",
+  "dependencies": {
+    "experimental-allure-playwright": "0.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derhoras/testautomation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derhoras/testautomation/issues"
+  },
+  "homepage": "https://github.com/derhoras/testautomation#readme"
+}
