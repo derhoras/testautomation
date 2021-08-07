@@ -25,7 +25,8 @@ test.only('Checks that integer addition works fine in ', async ({ page }) => {
      await page.click(calcButton);
 
     //const answerContent = await page.textContent('input#numberAnswerField.element.text.medium')
-    const answerContent = await page.evaluate(() => Array.from(document.querySelectorAll('#numberAnswerField'), element => element.textContent));
+    //const answerContent = await page.evaluate(() => Array.from(document.querySelectorAll('#numberAnswerField'), element => element.textContent));
+    const answerContent = await page.inputValue('#numberAnswerField')
     //const answerContent = document.querySelectorAll('#numberAnswerField')
     //const answerContent = await page.getAttribute('input#numberAnswerField.element.text.medium', 'value');
     expect(answerContent).toBe('20');
