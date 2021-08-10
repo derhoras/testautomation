@@ -273,7 +273,6 @@ buildValues.forEach(buildValue => {
 //     await page.fill(firstNumberField, '5');
 //     await page.fill(secondNumberField, '4');
 //     await page.selectOption('select[name="selectOperation"]', '2');
-
 //     await page.click(calcButton);
 //     const answerContent = await page.inputValue('#numberAnswerField')
 //     expect(answerContent).toBe('9');
